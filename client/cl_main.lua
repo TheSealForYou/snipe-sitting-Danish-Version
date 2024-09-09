@@ -52,7 +52,7 @@ local function MakePedSitDown(coords, heading, animData)
     stopPlacing()
     TaskGoToCoordAnyMeans(PlayerPedId(), coords.x, coords.y, coords.z, 1.0, 0, 0, 786603, 0xbf800000)
     local PlayerCoords = GetEntityCoords(PlayerPedId())
-    lib.showTextUI("[Right Click] - Annullér")
+    lib.showTextUI("[Højre klik] - Annullér")
     while #(PlayerCoords - coords) > 1.5 do
         Wait(1)
         PlayerCoords = GetEntityCoords(PlayerPedId())
