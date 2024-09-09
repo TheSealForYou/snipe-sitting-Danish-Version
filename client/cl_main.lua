@@ -34,7 +34,7 @@ end
 
 local function StartSittingThread()
     sitting = true
-    lib.showTextUI("Press [Q] to cancel")
+    lib.showTextUI("[Q] Annullér")
     CreateThread(function ()
         while sitting do
             Wait(1)
@@ -52,7 +52,7 @@ local function MakePedSitDown(coords, heading, animData)
     stopPlacing()
     TaskGoToCoordAnyMeans(PlayerPedId(), coords.x, coords.y, coords.z, 1.0, 0, 0, 786603, 0xbf800000)
     local PlayerCoords = GetEntityCoords(PlayerPedId())
-    lib.showTextUI("Press [Right Click] to cancel")
+    lib.showTextUI("[Right Click] - Annullér")
     while #(PlayerCoords - coords) > 1.5 do
         Wait(1)
         PlayerCoords = GetEntityCoords(PlayerPedId())
