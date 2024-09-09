@@ -10,9 +10,9 @@ local txt = {
     '-- Sid --  \n',
     '[E] Sid  \n',
     '[X / Right Click] Annullér  \n',
-    '[G] Næste Animation \n',
+    '[G] Næste Animation  \n',
     '[H] Sidste Animation  \n',
-    '[Up/Down Arrows] Høje \n',
+    '[Up/Down Arrows] Høje  \n',
     '[SCROLL] Rotére  \n',
 }
 
