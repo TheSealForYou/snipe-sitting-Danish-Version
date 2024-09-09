@@ -7,7 +7,7 @@ local sitting = false
 local oldCamView = nil
 
 local txt = {
-    '-- Sit --  \n',
+    '-- Sid --  \n',
     '[E] Sid  \n',
     '[X / Right Click] Annullér  \n',
     '[G] Næste Animation \n',
