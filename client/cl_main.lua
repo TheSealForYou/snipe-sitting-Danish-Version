@@ -8,12 +8,12 @@ local oldCamView = nil
 
 local txt = {
     '-- Sit --  \n',
-    '[E] Sit  \n',
-    '[X / Right Click] Cancel  \n',
-    '[G] Next Animation  \n',
-    '[H] Previous Animation  \n',
-    '[Up/Down Arrows] Height \n',
-    '[SCROLL] Rotate  \n',
+    '[E] Sid  \n',
+    '[X / Right Click] Annullér  \n',
+    '[G] Næste Animation \n',
+    '[H] Sidste Animation  \n',
+    '[Up/Down Arrows] Høje \n',
+    '[SCROLL] Rotére  \n',
 }
 
 local currentAnimIndex = 1
@@ -78,7 +78,7 @@ local function PlacingThread(animData)
         local animToUse = Config.Anims[currentAnimIndex]
 
         if not animToUse then
-            lib.notify({ type = "error", description = "No animation found." })
+            lib.notify({ type = "error", description = "Ingen animation fundet." })
             return
         end
 
@@ -122,7 +122,7 @@ local function PlacingThread(animData)
                     if #(GetEntityCoords(PlayerPedId()) - currentCoords) < 5.0 then
                         MakePedSitDown(GetEntityCoords(ped), GetEntityHeading(ped), animToUse)
                     else
-                        lib.notify({type = "error", description = "You are too far"})
+                        lib.notify({type = "error", description = "Du er for langt væk"})
                     end
                 end
 
@@ -131,7 +131,7 @@ local function PlacingThread(animData)
                     animToUse = Config.Anims[currentAnimIndex]
 
                     if not animToUse then
-                        lib.notify({ type = "error", description = "No animation found." })
+                        lib.notify({ type = "error", description = "Ingen animation fundet." })
                         return
                     end
 
@@ -144,7 +144,7 @@ local function PlacingThread(animData)
                     animToUse = Config.Anims[currentAnimIndex]
 
                     if not animToUse then
-                        lib.notify({ type = "error", description = "No animation found." })
+                        lib.notify({ type = "error", description = "Ingen animation fundet." })
                         return
                     end
 
@@ -239,7 +239,7 @@ RegisterCommand("sit", function(source, args)
     local animToUse = Config.Anims[currentAnimIndex]
 
     if not animToUse then
-        lib.notify({ type = "error", description = "No animation found." })
+        lib.notify({ type = "error", description = "Ingen animation fundet." })
         return
     end
 
