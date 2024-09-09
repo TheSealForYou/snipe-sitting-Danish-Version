@@ -6,7 +6,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'Sitting Script'
+description 'Sitting Script - Translated by SealForYou'
 version '1.0.0'
 author 'Snipe'
 
